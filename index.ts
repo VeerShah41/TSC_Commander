@@ -26,4 +26,18 @@ program
     const divide = Number(n1) / Number(n2);
     console.log(divide);
 })
+
+
+program
+.command("floor <n1> <n2>")
+.action((n1,n2)=>{
+    const floor = Math.floor(Number(n1) / Number(n2));
+    console.log(floor);
+})
+program
+.command("ceil <n1> <n2>")
+.action((n1,n2)=>{
+    const ceil = Math.ceil(Number(n1) / Number(n2));
+    console.log(ceil);
+})
 program.parse();
