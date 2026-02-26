@@ -14,5 +14,16 @@ program
     console.log(sum);
 })
 
-
+program
+.command("multiply <n1> <n2>")
+.action((n1,n2)=>{
+    const multiply = Number(n1) * Number(n2);
+    console.log(multiply);
+})
+program
+.command("divide <n1> <n2>")
+.action((n1,n2)=>{
+    const divide = Number(n1) / Number(n2);
+    console.log(divide);
+})
 program.parse();
