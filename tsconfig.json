@@ -1,9 +1,15 @@
 {
-"compilerOptions": {
-"outDir": "./dist",
-"rootDir": "./",
-"module": "CommonJS",
-"target": "ES2019",
-"esModuleInterop": true
-}
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./",
+        "module": "CommonJS",
+        "target": "ES2019",
+        "esModuleInterop": true,
+        "moduleDetection": "force",
+        "skipLibCheck": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }
